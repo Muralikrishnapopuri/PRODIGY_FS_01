@@ -12,13 +12,13 @@ function Home() {
 
 
     console.log(cookies.token)
-      axios.get('http://127.0.0.1:2021/myprofile',{
+      axios.get('https://user-auth-kj4s.onrender.com/myprofile',{
           headers :{
               'x-token':token
           }
       }).then(res => setData(res.data)).catch((err) => console.log(err));
       if(cookies.token){
-        axios.get('http://127.0.0.1:2021/myprofile',{
+        axios.get('https://user-auth-kj4s.onrender.com/myprofile',{
           headers :{
               'x-token':cookies.token
           }
