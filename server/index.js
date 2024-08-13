@@ -83,6 +83,6 @@ app.get('/myprofile',middleware,async(req,res) =>{
     }
 })
 
-app.listen(2021,()=>{ 
-    console.log('Server running... : http://127.0.0.1:2021') 
+app.listen(8080,()=>{ 
+    console.log('Server running...') 
 })   
