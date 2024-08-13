@@ -14,7 +14,7 @@ const formik = useFormik({
     },
 
     onSubmit: (values)=>{
-        axios.post("http://127.0.0.1:2021/register",values);
+        axios.post("https://user-auth-kj4s.onrender.com/register",values);
         navigate("/login");
         // alert(JSON.stringify(values));
     }
